@@ -254,50 +254,37 @@ export default function About() {
 
       {/* Team */}
       <section className="bg-white section-padding">
-        <div className="content-max max-w-[800px]">
-          <div className="text-center mb-10">
-            <ScrollReveal>
-              <h2 className="font-heading font-bold text-dark text-2xl md:text-3xl lg:text-4xl">
-                {t('Meet the Team', 'Conoce al Equipo')}
-              </h2>
-            </ScrollReveal>
-            <ScrollReveal delay={0.1}>
-              <p className="font-body text-mid mt-3">
-                {t('The people behind the brushstrokes.', 'Las personas detras de cada pincelada.')}
-              </p>
-            </ScrollReveal>
-          </div>
+  <div className="content-max max-w-[900px] text-center">
 
-          <ScrollReveal>
-            <div className="max-w-[500px] mx-auto text-center">
-              <div className="w-40 h-40 md:w-52 md:h-52 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary-light hover:border-primary transition-colors">
-                <img
-                  src="/images/team-owner.jpg"
-                  alt="Owner"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <h3 className="font-heading font-bold text-dark text-xl md:text-2xl">
-                {t('Jose Ventura', 'Jose Ventura')}
-              </h3>
-              <p className="font-body font-medium text-primary text-sm mt-1">
-                {t('Owner & Lead Painter', 'Dueno y Pintor Principal')}
-              </p>
-              <p className="font-body text-mid leading-relaxed mt-4">
-                {t(
-                  "With over 15 years of painting experience in the Phoenix area, Jose founded Ventura's Quality Painting on the belief that every homeowner deserves exceptional craftsmanship and honest service.",
-                  'Con mas de 15 anos de experiencia en pintura en el area de Phoenix, Jose fundo Ventura\'s Quality Painting con la conviccion de que cada propietario merece artesania excepcional.'
-                )}
-              </p>
-              <Link to="/contact" className="btn-primary mt-6 inline-flex">
-                {t('Get a Free Estimate', 'Obten un Estimado Gratis')}
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+```
+<img
+  src="/images/logo.png"
+  alt="Ventura's Quality Painting"
+  className="w-40 md:w-56 mx-auto mb-8"
+/>
+
+<h2 className="font-heading font-bold text-dark text-2xl md:text-3xl lg:text-4xl mb-4">
+  {t('Why Choose Ventura’s Quality Painting?', '¿Por Qué Elegir Ventura’s Quality Painting?')}
+</h2>
+
+<p className="font-body text-mid max-w-[700px] mx-auto mb-8">
+  {t(
+    'We deliver professional painting services with quality craftsmanship, honest communication, and attention to 
+detail on every project.',
+    'Ofrecemos servicios profesionales de pintura con acabados de calidad, comunicación honesta y atención al 
+detalle en cada proyecto.'
+  )}
+</p>
+
+<Link to="/contact" className="btn-primary inline-flex">
+  {t('Get a Free Estimate', 'Obtén un Estimado Gratis')}
+  <ArrowRight className="w-4 h-4 ml-2" />
+</Link>
+```
+
+  </div>
+</section>
+
 
       {/* CTA */}
       <ContactCTASection
