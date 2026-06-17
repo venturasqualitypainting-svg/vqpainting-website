@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '@/context/LanguageContext';
-import { Menu, X, Phone, Paintbrush } from 'lucide-react';
+import { Menu, X, Phone, } from 'lucide-react';
 
 const navLinks = [
   { path: '/', en: 'Home', es: 'Inicio' },
