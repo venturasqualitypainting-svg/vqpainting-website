@@ -256,7 +256,7 @@ export default function About() {
       <section className="bg-white section-padding">
   <div className="content-max max-w-[900px] text-center">
 
-```
+
 <img
   src="/images/logo.png"
   alt="Ventura's Quality Painting"
@@ -269,18 +269,16 @@ export default function About() {
 
 <p className="font-body text-mid max-w-[700px] mx-auto mb-8">
   {t(
-    'We deliver professional painting services with quality craftsmanship, honest communication, and attention to 
-detail on every project.',
-    'Ofrecemos servicios profesionales de pintura con acabados de calidad, comunicación honesta y atención al 
-detalle en cada proyecto.'
-  )}
+  'We deliver professional painting services with quality craftsmanship, honest communication, and attention to detail on every project.',
+  'Ofrecemos servicios profesionales de pintura con acabados de calidad, comunicación honesta y atención al detalle en cada proyecto.'
+)}
 </p>
 
 <Link to="/contact" className="btn-primary inline-flex">
   {t('Get a Free Estimate', 'Obtén un Estimado Gratis')}
   <ArrowRight className="w-4 h-4 ml-2" />
 </Link>
-```
+
 
   </div>
 </section>
