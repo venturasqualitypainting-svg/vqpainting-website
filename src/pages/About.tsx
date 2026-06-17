@@ -97,8 +97,8 @@ export default function About() {
           <div className="grid lg:grid-cols-[45%_55%] gap-8 lg:gap-12 items-center">
             <ScrollReveal direction="left">
               <div className="rounded-xl overflow-hidden shadow-lg">
-                <img
-                  src="/images/about-story.jpg"
+                  src="/images/about-story.jpg"<img
+                  src="/images/about-story.png"
                   alt="Our story"
                   className="w-full aspect-[4/3] object-cover"
                   loading="lazy"
