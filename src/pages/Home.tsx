@@ -299,7 +299,7 @@ export default function Home() {
             <ScrollReveal direction="left">
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <img
-                  src="/images/hero-nueva.png"
+                  src="/images/sala.png"
                   alt="Ventura's Quality Painting owner"
                   className="w-full h-auto object-contain"
                   loading="lazy"
