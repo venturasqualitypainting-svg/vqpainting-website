@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 10% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 10% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 10% 18%;
+    --primary: 45 65% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 9% 96%;
+    --secondary-foreground: 210 10% 18%;
+    --muted: 220 9% 96%;
+    --muted-foreground: 210 5% 56%;
+    --accent: 220 9% 96%;
+    --accent-foreground: 210 10% 18%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 14% 83%;
+    --input: 214 14% 83%;
+    --ring: 45 65% 52%;
+    --radius: 0.625rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-white text-dark font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-28;
+  }
+
+  .content-max {
+    @apply max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-primary text-white font-body font-semibold text-sm rounded-lg px-7 py-3.5 transition-all duration-300 hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-primary text-primary font-body font-semibold text-sm rounded-lg px-7 py-3 transition-all duration-300 hover:bg-primary hover:text-white;
+  }
+
+  .btn-green {
+    @apply inline-flex items-center justify-center gap-2 bg-success text-white font-body font-semibold text-sm rounded-lg px-7 py-3.5 transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
